@@ -1,0 +1,27 @@
+name: SimpleGameMac
+options:
+  bundleIdPrefix: com.yourcompany
+configs:
+  Debug: debug
+  Release: release
+settings:
+  INFOPLIST_FILE: Info.plist
+  IPHONEOS_DEPLOYMENT_TARGET: '13.0'
+  MACOSX_DEPLOYMENT_TARGET: '11.0'
+targets:
+  SimpleGameMac:
+    type: application
+    platform: macOS
+    deploymentTarget:
+      macOS: '11.0'
+    sources:
+      - path: SimpleGame/SimpleGame
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.yourcompany.simplegamemac
+      SWIFT_VERSION: '5.0'
+    resources:
+      - path: Resources
+      - path: SimpleGameMac/Resources
+    schemes:
+      - name: SimpleGameMac
+        shared: true

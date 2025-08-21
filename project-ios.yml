@@ -1,0 +1,26 @@
+name: SimpleGame
+options:
+  bundleIdPrefix: com.akiralabs
+configs:
+  Debug: debug
+  Release: release
+settings:
+  INFOPLIST_FILE: Info.plist
+  IPHONEOS_DEPLOYMENT_TARGET: '15.0'
+targets:
+  SimpleGame:
+    type: application
+    platform: iOS
+    deploymentTarget:
+      iOS: '15.0'
+    sources:
+      - path: SimpleGame/SimpleGame
+    resources:
+      - path: SimpleGame/SimpleGame/Assets.xcassets
+      - path: Resources
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.akiralabs.SimpleGame
+      SWIFT_VERSION: '5.0'
+    schemes:
+      - name: SimpleGame
+        shared: true
