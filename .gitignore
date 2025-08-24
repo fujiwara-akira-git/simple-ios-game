@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserdatad/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Swift Package Manager
+.build/
+Packages/
+
+# CocoaPods
+Pods/
+
+# Xcode generated
+*.moved-aside
+*.xcscmblueprint
+
+# Ignore user interface state files and OS artifacts
+SimpleGame.xcworkspace/xcuserdata/
+SimpleGame/SimpleGame.xcodeproj/project.xcworkspace/xcuserdata/
+SimpleGameMac.xcodeproj/xcuserdata/
+
+# Keep asset catalogs tracked by default
+# To ignore AppIcon generated files, uncomment the following line
+# SimpleGame/SimpleGame/Assets.xcassets/AppIcon.appiconset/*
